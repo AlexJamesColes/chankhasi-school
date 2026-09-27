@@ -386,6 +386,23 @@ section:not(.hero) { padding-block: clamp(72px, 10vw, 128px); }
 .about-text .lead { max-width: 40ch; margin-bottom: 1.1em; }
 .about-text p:not(.lead):not(.eyebrow) { max-width: 60ch; color: var(--ink-2); }
 .chichewa { font-style: italic; font-weight: 400; color: var(--clay); }
+.proverb {
+  margin: -.15em 0 1.1em;
+  font: italic 400 clamp(1.1rem, 1.8vw, 1.28rem)/1.45 var(--serif);
+  color: var(--clay);
+  text-wrap: balance;
+}
+.proverb .gloss { color: var(--muted); }
+.hero-ny {
+  margin: -.2em 0 1.1em;
+  font: italic 400 clamp(1rem, 1.7vw, 1.15rem)/1.4 var(--serif);
+  color: var(--clay-deep);
+}
+.quote .motto-ny {
+  margin: -8px 0 22px;
+  font: italic 400 1.1rem/1.4 var(--serif);
+  color: #f3e3c4;
+}
 
 .stats {
   display: grid;
@@ -605,6 +622,23 @@ section:not(.hero) { padding-block: clamp(72px, 10vw, 128px); }
 }
 .photo--banner,
 .photo--wide { margin: 0 0 clamp(40px, 6vw, 64px); }
+.photo-row {
+  display: grid;
+  gap: clamp(16px, 2.5vw, 24px);
+  grid-template-columns: 1fr;
+  margin: 0 0 clamp(40px, 6vw, 64px);
+}
+@media (min-width: 600px) { .photo-row { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.illustration img { border-radius: var(--radius); background: var(--paper-3); }
+.split {
+  display: grid;
+  gap: clamp(28px, 5vw, 56px);
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin-bottom: clamp(40px, 6vw, 64px);
+}
+.split .section-head { margin-bottom: 0; }
+@media (min-width: 900px) { .split { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
 @media (max-width: 700px) {
   .photo--banner img { aspect-ratio: 16 / 10; object-fit: cover; object-position: 62% 50%; }
 }

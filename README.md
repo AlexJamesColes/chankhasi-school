@@ -86,9 +86,14 @@ Everything below is highlighted on the draft.
 - [ ] Whether donations@chankhasi-school.org still works, and who reads it
 - [ ] WhatsApp number (optional)
 
+**Chichewa** (ask a Chichewa-speaking teacher to check each line; the highlight notes carry one question each)
+- [ ] The school's name, the three proverbs, "Tithandizane", "Lumikizanani nafe" and the motto translation
+- The proverbs were checked against J. C. Chakanza, *Wisdom of the People: 2000 Chinyanja Proverbs* (2000), Nos. 608, 1035 and 1302; spellings follow the Malawi Institute of Education, with the curly apostrophe (’)
+
 **Also useful**
 - [ ] The school's badge or logo, if it has one (the sun-over-the-lake mark is a stand-in)
-- [ ] Photos for the two dashed spaces: a lesson, and visitors with pupils. Only the school sign and school buildings photos are cleared. No photos of people go on the site without explicit approval, and families should agree to any photo showing children's faces.
+- [ ] A photo for the remaining dashed space (visitors with pupils). No photos of people go on the site without explicit approval.
+- [ ] Families' permission, through the head teacher, before any photo showing a pupil's face or anything that identifies them. The two classroom photos on the page are cropped so no pupil can be recognised; a third (a pupil at a bench) is held back until her family agrees.
 
 ## The old website and domain
 
