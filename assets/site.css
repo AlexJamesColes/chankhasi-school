@@ -638,6 +638,9 @@ section:not(.hero) { padding-block: clamp(72px, 10vw, 128px); }
   margin-bottom: clamp(40px, 6vw, 64px);
 }
 .split .section-head { margin-bottom: 0; }
+.story-intro p { color: var(--ink-2); max-width: 60ch; }
+.story-intro p:first-child { font-size: clamp(1.15rem, 2.1vw, 1.3rem); line-height: 1.55; color: var(--ink); }
+.story-opening { align-items: start; }
 @media (min-width: 900px) { .split { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
 @media (max-width: 700px) {
   .photo--banner img { aspect-ratio: 16 / 10; object-fit: cover; object-position: 62% 50%; }

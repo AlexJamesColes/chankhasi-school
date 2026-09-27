@@ -66,10 +66,12 @@ Everything below is highlighted on the draft.
 **About the school**
 - [ ] Nothing outstanding
 
-**Our story**
-- [ ] Kingswood School (Bath) summer visits through Open Arms Malawi: still happening?
-- [ ] World Servants teachers' houses: which year?
-- [ ] Lancing College, 2024: their reports say the work was at Chankhasi Secondary School. Keep it or take it out?
+**Our story** (Father Andrew's story; each gap is highlighted with a question)
+- [ ] Andrew's childhood in Nkhandwe Village, his part in the early days, and whether he is the Andrew Banda among the 2016 teachers and the author of the 2020 essay on girls' education
+- [ ] How his name and title should appear (the school's Facebook page: "The Very Reverend Father Andrew Malovu Banda", Dean of the Anglican Diocese of Lake Malawi, at All Saints Cathedral in Nkhotakota)
+- [ ] The year Canon Hunter Secondary School opened, and the girls' and boys' boarding houses
+- [ ] Kingswood's first visit year and whether students still visit every summer
+- [ ] Whether the site should speak for Chankhasi Private Schools (primary and secondary) rather than only the primary school
 
 **School life** (several lines come from the school's 2016 website)
 - [ ] The garden plot, the painted tiles and "a brick a day": still true?
@@ -82,9 +84,8 @@ Everything below is highlighted on the draft.
 - [ ] Whether online giving is wanted (the page only says to get in touch)
 
 **Contact**
-- [ ] Postal address (Nkhandwe Village, P.O. Box 460, Nkhotakota, from 2016)
-- [ ] Whether donations@chankhasi-school.org still works, and who reads it
-- [ ] WhatsApp number (optional)
+- [ ] Postal address (P.O. Box 216 in 2025, P.O. Box 460 in 2016)
+- [ ] Whether the school is happy to publish the email address and phone numbers from its Facebook page
 
 **Chichewa** (ask a Chichewa-speaking teacher to check each line; the highlight notes carry one question each)
 - [ ] The school's name, the three proverbs, "Tithandizane", "Lumikizanani nafe" and the motto translation
@@ -129,5 +130,10 @@ The current pupil and teacher numbers and the two photos were provided for the s
 - Lancing College, [Adventures in Malawi](https://www.lancingcollege.co.uk/news/adventures-malawi) and [2024 Malawi Adventures](https://www.lancingcollege.co.uk/news/2024-malawi-adventures/)
 - Open Arms Malawi, [School visitors make a lasting impression](https://www.openarmsmalawi.org/news/school-visitors-make-a-lasting-impression) (2016)
 - Morna International College, [blog, September 2009](https://mornainternationalibiza.blogspot.com/2009/09/)
-- World Servants, [Chankhazi project page](https://www.worldservants.nl/malawi/MA124) (no longer online)
+- The school's Facebook page, [Chankhasi Private Schools](https://www.facebook.com/p/Chankhasi-Private-Schools-61572417923149/) (posts from August and September 2026)
+- Anglican Diocese of Lake Malawi, [parish list](https://adlmmw.org/parishes.php)
+- Malawi24, [K43 million donation to Nkhotakota Hospital](https://malawi24.com/2025/07/18/k43-million-donation-to-boost-health-service-delivery-at-nkhotakota-hospital/) (July 2025)
+- The Young Darwinian, [Education in Malawi](https://theyoungdarwinian.com/education-in-malawi/) (April 2020)
+- Kingswood School, [2018](https://www.kingswood.bath.sch.uk/news/2018-09-05/students-carry-out-charity-work-in-malawi-during-summer) and [2025](https://community.kingswood.bath.sch.uk/news/school-news/165/165-Kingswood-Charity-Christmas-Fair) news
+- Harrogate News, [Ashville College in Malawi](https://www.harrogate-news.co.uk/2017/08/20/ashville-college-students-help-improve-lives-of-malawian-orphans/) (2017)
 - Map data: [Natural Earth](https://www.naturalearthdata.com/) (public domain)
