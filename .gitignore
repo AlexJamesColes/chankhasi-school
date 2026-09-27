@@ -1,0 +1,5 @@
+.DS_Store
+tools/.cache/
+__pycache__/
+tools/photos-src/
+.preview/

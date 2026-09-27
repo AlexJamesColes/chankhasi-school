@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>Icon</title>
+<!-- Rendered by tools/render_images.py. ?shape=square gives the full-bleed app icon, otherwise the round favicon. -->
+<style>
+  html, body { margin: 0; width: 512px; height: 512px; overflow: hidden; background: transparent; }
+  svg { display: block; width: 512px; height: 512px; }
+  #square, .square #round { display: none; }
+  .square #square { display: block; }
+</style>
+</head>
+<body>
+<svg id="round" viewBox="0 0 64 64"><circle cx="32" cy="32" r="31" fill="#1d5a78"/><path d="M14 37a18 18 0 0 1 36 0z" fill="#f0ae42"/><path d="M9 43c3.8 0 3.8-2.6 7.6-2.6s3.8 2.6 7.6 2.6 3.8-2.6 7.6-2.6 3.8 2.6 7.6 2.6 3.8-2.6 7.6-2.6 3.8 2.6 7.6 2.6" fill="none" stroke="#fbf7f0" stroke-width="3.2" stroke-linecap="round"/><path d="M16 50c3.2 0 3.2-2.2 6.4-2.2s3.2 2.2 6.4 2.2 3.2-2.2 6.4-2.2 3.2 2.2 6.4 2.2 3.2-2.2 6.4-2.2" fill="none" stroke="#fbf7f0" stroke-width="3.2" stroke-linecap="round" opacity=".55"/></svg>
+<svg id="square" viewBox="0 0 64 64"><rect width="64" height="64" fill="#1d5a78"/><path d="M15 36a17 17 0 0 1 34 0z" fill="#f0ae42"/><path d="M8 42c3.8 0 3.8-2.6 7.6-2.6s3.8 2.6 7.6 2.6 3.8-2.6 7.6-2.6 3.8 2.6 7.6 2.6 3.8-2.6 7.6-2.6 3.8 2.6 7.6 2.6 3.8-2.6 7.6-2.6" fill="none" stroke="#fbf7f0" stroke-width="3" stroke-linecap="round"/><path d="M14 48.5c3.2 0 3.2-2.2 6.4-2.2s3.2 2.2 6.4 2.2 3.2-2.2 6.4-2.2 3.2 2.2 6.4 2.2 3.2-2.2 6.4-2.2 3.2 2.2 6.4 2.2" fill="none" stroke="#fbf7f0" stroke-width="3" stroke-linecap="round" opacity=".55"/></svg>
+<script>
+  if (location.search.indexOf('shape=square') > -1) {
+    document.body.className = 'square';
+  }
+</script>
+</body>
+</html>
