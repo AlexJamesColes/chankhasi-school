@@ -14,14 +14,14 @@ Run:
 python3 -m http.server 8940
 ```
 
-then open http://localhost:8940. To check the site exactly as staging serves it, under a subpath, run the same command from the parent folder and open http://localhost:8940/chankhasi-school/ (with the folder named `chankhasi-school`).
+then open http://localhost:8940. 
 
 ## Files
 
 | Path | What it is |
 | --- | --- |
 | `index.html` | The whole site: hero, about, story, school life, friends, how to help, contact |
-| `404.html` | Page-not-found. Its `<base href>` is `/chankhasi-school/` for staging; change it to `/` on the custom domain |
+| `404.html` | Page-not-found. Its `<base href>` is `/`, since the site sits at the root of its address |
 | `assets/site.css` | All styles |
 | `assets/site.js` | Menu, share button, contact form, draft review notes. The page works without it |
 | `assets/fonts/` | Fraunces, subset to Latin and trimmed to about 47 KB (SIL Open Font Licence) |
@@ -46,7 +46,14 @@ python3 tools/render_images.py
 
 ## Staging
 
-The draft is served by GitHub Pages at https://alexjamescoles.github.io/chankhasi-school/ from the `main` branch. It carries the draft banner and a `noindex` tag, so search engines should not list it.
+The draft is served by Cloudflare Pages at https://chankhasi-school.pages.dev. Only the website files are uploaded (`index.html`, `404.html`, `robots.txt` and `assets/`), not the tools or notes:
+
+```bash
+rm -rf .deploy && mkdir .deploy && cp -R index.html 404.html robots.txt assets .deploy/
+npx wrangler pages deploy .deploy --project-name chankhasi-school --branch main
+```
+
+It carries the draft banner and a `noindex` tag, so search engines should not list it.
 
 ## Screens tested
 
@@ -92,8 +99,8 @@ chankhasi-school.org is still registered (GoDaddy, since June 2014, paid up to 3
 1. Fill in or remove every `tbc` item. `grep -n 'class="tbc' index.html` lists them. The spans are harmless once the draft class is gone, so they can stay.
 2. Remove `class="draft"` from `<html>` and delete the `noindex` line in `index.html`.
 3. Connect the contact form: create a form at Formspree (or similar) sending to the school's inbox, and paste its endpoint into `data-endpoint` on `#contact-form`. Until then the form politely says it is not connected.
-4. Move from staging to chankhasi-school.org: add a `CNAME` file containing the domain, point the domain's A and CNAME records at GitHub Pages (leave the MX email records alone), and set the custom domain in the repository's Pages settings.
-5. At the same time: change the `<base href>` in `404.html` from `/chankhasi-school/` to `/`, change `og:url` and `og:image` in `index.html` to `https://chankhasi-school.org/...`, and add `<link rel="canonical" href="https://chankhasi-school.org/">`.
+4. Move from staging to chankhasi-school.org: add it as a custom domain on the Cloudflare Pages project and point the domain's website records (A/CNAME) where Cloudflare says, leaving the MX email records alone.
+5. At the same time: change `og:url` and `og:image` in `index.html` to `https://chankhasi-school.org/...`, and add `<link rel="canonical" href="https://chankhasi-school.org/">`.
 6. Optional: an email address on the domain (for example hello@) that forwards to any inbox, using Cloudflare Email Routing or the registrar's forwarding.
 
 ## Photo guidance

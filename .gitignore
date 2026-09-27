@@ -3,3 +3,14 @@ tools/.cache/
 __pycache__/
 tools/photos-src/
 .preview/
+.deploy/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
+wrangler.jsonc
+wrangler.toml
+.wrangler/
