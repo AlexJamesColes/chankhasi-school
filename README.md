@@ -2,7 +2,7 @@
 
 A one-page website for Chankhasi Private School in Nkhandwe Village, near the shore of Lake Malawi about 15 km south of Nkhotakota town: Chankhasi Primary School, Canon Hunter Secondary School and the boarding houses.
 
-Hand-written static HTML and CSS with no build step, so it can be hosted free on GitHub Pages. Before any photos, the first visit is about 70 KB, which matters in Malawi where mobile data is slow and expensive. Photos are lazy-loaded WebP, sized for phones and desktops separately.
+Hand-written static HTML and CSS with no build step, so it can be hosted free on Cloudflare Pages. Before any photos, the first visit is about 70 KB, which matters in Malawi where mobile data is slow and expensive. Photos are lazy-loaded WebP, sized for phones and desktops separately.
 
 **Status: draft for review.** Facts still to be confirmed are wrapped in `<span class="tbc" data-note="...">`. While `<html>` carries the `draft` class they show in yellow, and hovering or tapping one shows the note explaining what needs checking.
 
@@ -25,10 +25,12 @@ then open http://localhost:8940.
 | `assets/site.css` | All styles |
 | `assets/site.js` | Menu, share button, contact form, draft review notes. The page works without it |
 | `assets/fonts/` | Fraunces, subset to Latin and trimmed to about 47 KB (SIL Open Font Licence) |
-| `assets/img/` | Favicon, home-screen icon and the link-preview card (`og.jpg`) |
+| `assets/img/` | Favicons, home-screen icons and the link-preview card (`og.jpg`) |
+| `assets/img/logo/` | The school badge and shield, redrawn as sharp vector files (SVG) from the badge the school uses |
+| `assets/img/illustrations/` | The drawn scenes of the school and its pupils, used instead of photos of children |
 | `assets/img/photos/` | The site's photos, cropped and compressed, at two or three sizes each |
 | `tools/build_map.py` | Draws the map of Malawi from Natural Earth data and writes it into `index.html` between the `MAP:START` and `MAP:END` markers |
-| `tools/render_images.py` | Renders `og.jpg` and the icons with headless Chrome (needs the preview server running) |
+| `tools/render_images.py` | Renders `og.jpg` with headless Chrome (needs the preview server running) |
 | `tools/process_photos.py` | Crops and compresses cleared originals from `tools/photos-src/` (kept out of git) into `assets/img/photos/` |
 | `tools/build_preview.py` | Bundles the page into one self-contained HTML file (inline CSS, JS and fonts) for sharing as a single file |
 
@@ -92,9 +94,9 @@ Everything below is highlighted on the draft.
 - The proverbs were checked against J. C. Chakanza, *Wisdom of the People: 2000 Chinyanja Proverbs* (2000), Nos. 608, 1035 and 1302; spellings follow the Malawi Institute of Education, with the curly apostrophe (’)
 
 **Also useful**
-- [ ] The school's badge or logo, if it has one (the sun-over-the-lake mark is a stand-in)
+- [x] The school's badge, now on the site as a vector redraw. Worth asking the school whether it has the original artwork file
 - [ ] A photo for the remaining dashed space (visitors with pupils). No photos of people go on the site without explicit approval.
-- [ ] Families' permission, through the head teacher, before any photo showing a pupil's face or anything that identifies them. The two classroom photos on the page are cropped so no pupil can be recognised; a third (a pupil at a bench) is held back until her family agrees.
+- [ ] Families' permission, through the head teacher, before any photo showing a pupil's face or anything that identifies them. Until then, pupils appear only in drawings, and the only photos are of the sign and the buildings.
 
 ## The old website and domain
 

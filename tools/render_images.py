@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Render the share card (og.jpg) with headless Chrome.
 
-The favicons and home-screen icon come from the school badge in
-assets/img/logo and are not generated here.
+The favicons and home-screen icons are drawn from the vector badge and
+shield in assets/img/logo and are not generated here.
 
 Needs the local preview server running on port 8940, because the share
 card borrows the hero art straight from index.html.

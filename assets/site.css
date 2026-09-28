@@ -47,7 +47,7 @@
   --radius: 16px;
   --wrap: 1120px;
   --gutter: clamp(16px, 4vw, 32px);
-  --header-h: 64px;
+  --header-h: 72px;
   --serif: "Fraunces", Georgia, "Times New Roman", serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color-scheme: light;
@@ -229,7 +229,7 @@ p { margin: 0 0 1em; text-wrap: pretty; }
   text-decoration: none;
 }
 @media (hover: hover) { .brand:hover { color: #fff; } }
-.brand-mark { width: auto; height: 46px; flex: none; }
+.brand-mark { width: 56px; height: 56px; flex: none; border-radius: 50%; box-shadow: 0 0 0 1.5px var(--gold); background: #fff; }
 .brand-name {
   display: flex;
   flex-direction: column;
@@ -962,7 +962,8 @@ section:not(.hero) { padding-block: clamp(72px, 10vw, 128px); }
 .note-pop[hidden] { display: none; }
 
 @media (orientation: landscape) and (max-height: 500px) {
-  :root { --header-h: 56px; }
+  :root { --header-h: 60px; }
+  .brand-mark { width: 46px; height: 46px; }
   .hero-text { padding-top: 24px; }
 }
 
