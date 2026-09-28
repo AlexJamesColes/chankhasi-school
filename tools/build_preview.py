@@ -44,7 +44,7 @@ def main():
     draft = 'class="draft"' in html.split("<head>", 1)[0]
 
     parts = [
-        "<title>Chankhasi Primary School</title>",
+        "<title>Chankhasi Private School</title>",
         "<style>\n" + css + PREVIEW_CSS + "</style>",
     ]
     parts.append("<script>document.documentElement.classList.add('js');</script>")

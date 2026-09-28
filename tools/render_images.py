@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
-"""Render the share card and icons with headless Chrome.
+"""Render the share card (og.jpg) with headless Chrome.
+
+The favicons and home-screen icon come from the school badge in
+assets/img/logo and are not generated here.
 
 Needs the local preview server running on port 8940, because the share
 card borrows the hero art straight from index.html.
 
     python3 tools/render_images.py
 
-Writes assets/img/og.jpg, apple-touch-icon.png and favicon-32.png.
+Writes assets/img/og.jpg.
 """
 
 import subprocess
@@ -44,15 +47,8 @@ def main():
         shoot(f"{BASE}/tools/og.html", (1200, 630), tmp / "og.png")
         Image.open(tmp / "og.png").convert("RGB").save(IMG / "og.jpg", quality=86, optimize=True, progressive=True)
 
-        shoot(f"{BASE}/tools/icon.html?shape=square", (512, 512), tmp / "square.png")
-        sq = Image.open(tmp / "square.png").convert("RGB")
-        sq.resize((180, 180), Image.LANCZOS).save(IMG / "apple-touch-icon.png", optimize=True)
 
-        shoot(f"{BASE}/tools/icon.html", (512, 512), tmp / "round.png", transparent=True)
-        rd = Image.open(tmp / "round.png").convert("RGBA")
-        rd.resize((32, 32), Image.LANCZOS).save(IMG / "favicon-32.png", optimize=True)
-
-    for name in ("og.jpg", "apple-touch-icon.png", "favicon-32.png"):
+    for name in ("og.jpg",):
         print(name, (IMG / name).stat().st_size // 1024, "KB")
 
 

@@ -1,6 +1,6 @@
-# Chankhasi Primary School website
+# Chankhasi Private School website
 
-A one-page website for Chankhasi Primary School, a community school near the shore of Lake Malawi, about 15 km south of Nkhotakota town.
+A one-page website for Chankhasi Private School in Nkhandwe Village, near the shore of Lake Malawi about 15 km south of Nkhotakota town: Chankhasi Primary School, Canon Hunter Secondary School and the boarding houses.
 
 Hand-written static HTML and CSS with no build step, so it can be hosted free on GitHub Pages. Before any photos, the first visit is about 70 KB, which matters in Malawi where mobile data is slow and expensive. Photos are lazy-loaded WebP, sized for phones and desktops separately.
 

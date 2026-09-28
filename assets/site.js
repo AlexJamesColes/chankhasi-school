@@ -46,8 +46,8 @@
     share.parentNode.appendChild(shareStatus);
     share.addEventListener('click', function () {
       var data = {
-        title: 'Chankhasi Primary School',
-        text: 'Chankhasi Primary School, a community school by Lake Malawi',
+        title: 'Chankhasi Private School',
+        text: 'Chankhasi Private School, a community primary and secondary school by Lake Malawi',
         url: location.href.split('#')[0]
       };
       function showLink() {

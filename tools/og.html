@@ -13,9 +13,11 @@
     background: linear-gradient(180deg, #f6eee1 0%, #f7e6c6 34%, #f4cb8e 52%, #efb674 59.4%);
   }
   .card-text { position: absolute; z-index: 1; left: 72px; top: 60px; right: 72px; }
-  .card-text .eyebrow { font: 650 20px/1.2 var(--sans); letter-spacing: .15em; margin-bottom: 18px; color: var(--clay-deep); }
+  body::before { content: ""; position: absolute; z-index: 2; left: 0; right: 0; top: 0; height: 14px; background: var(--navy); border-bottom: 3px solid var(--gold); }
+  .card-text .eyebrow { font: 650 20px/1.2 var(--sans); letter-spacing: .15em; margin-bottom: 18px; color: var(--gold-deep); }
   .card-text h1 { font-size: 112px; margin: 0; }
   .card-text .h1-line { font-size: .5em; margin-top: .1em; }
+  .badge { position: absolute; z-index: 1; right: 76px; top: 52px; width: 236px; height: 236px; border-radius: 50%; box-shadow: 0 0 0 5px #f6eee1, 0 0 0 7px var(--gold), 0 16px 36px -14px rgba(2, 22, 54, .45); }
   .art { position: absolute; inset: 0; }
   .art svg { width: 100%; height: 100%; }
   .h-sun, .h-glitter { animation: none !important; }
@@ -25,8 +27,9 @@
 <body>
   <div class="card-text">
     <p class="eyebrow">Nkhotakota · Malawi</p>
-    <h1>Chankhasi <span class="h1-line">Primary School</span></h1>
+    <h1>Chankhasi <span class="h1-line">Private School</span></h1>
   </div>
+  <img class="badge" src="../assets/img/logo/badge-480.webp" width="480" height="480" alt="">
   <div class="art" id="art"></div>
   <script>
     fetch('../index.html').then(function (r) { return r.text(); }).then(function (html) {

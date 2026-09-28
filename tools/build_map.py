@@ -314,7 +314,7 @@ def main():
     svg.append(
         f'<svg class="map" viewBox="0 0 {W} {H}" role="img" aria-labelledby="map-title map-desc">'
         '<title id="map-title">Map of Malawi</title>'
-        '<desc id="map-desc">Chankhasi Primary School is near the western shore of Lake Malawi, about 15 km '
+        '<desc id="map-desc">Chankhasi Private School is near the western shore of Lake Malawi, about 15 km '
         'south of Nkhotakota town in central Malawi, north-east of the capital, Lilongwe.</desc>'
         f'<defs><clipPath id="map-clip"><rect width="{W}" height="{H}" rx="6"/></clipPath>'
         f'<path id="lake-label-path" d="{label_d}"/></defs>'
